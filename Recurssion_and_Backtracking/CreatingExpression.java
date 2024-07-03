@@ -19,7 +19,7 @@ public class CreatingExpression {
         }
         sc.close();
     }
-
+    
     static void checkIfPossible(int index,  int[] arr, int curr_sum , int X){
         if (index == arr.length){
             if (curr_sum == X ){
@@ -27,7 +27,6 @@ public class CreatingExpression {
             }
             return;
         }
-
         checkIfPossible(index+1, arr, curr_sum+arr[index], X);
         checkIfPossible(index+1, arr, curr_sum-arr[index], X);
 
