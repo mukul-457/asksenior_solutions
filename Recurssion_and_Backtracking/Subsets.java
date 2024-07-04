@@ -11,7 +11,6 @@ public class Subsets {
 class Solution {
     public List<List<Integer>> subsets(int[] nums) {
         List<List<Integer>> solutions = new ArrayList<>();
-        int n = nums.length;
         List<Integer> currSubset = new ArrayList<>();
         createSubset(nums, currSubset, 0,solutions);
         return solutions;
